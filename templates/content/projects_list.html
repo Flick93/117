@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %} Projects {% endblock title %}
+
+{% block content %}
+<section class="projects-section center-column">
+    <h2>My Projects</h2>
+    <div class="projects-list center-row">
+        <!--Onecard for each projects-->
+        {% for item in projects %}
+        <div class="project-card">
+            <!-- Left Side -->
+            <div class="project-image">
+                <img src="{{item.image}}" alt="Project Image">
+            </div>
+            <!-- Right Side -->
+            <div class="project-details">
+                <h3 class="project-title">{{item.name}}</h3>
+                <p class="project-description">{{item.description}}</p>
+                <p class="project-year">{{item.year}}</p>
+                <div class="project-skills">
+                    <span class="skill">HTML</span>
+                    <span class="skill">CSS</span>
+                    <span class="skill">JS</span>
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+    </div>
+</section>
+{% endblock content %}

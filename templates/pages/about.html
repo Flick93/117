@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %} About Me {% endblock title %}
+{% load static %}
+
+{% block content %}
+<section class="about-section center-row">
+    <div class="about-image-container">
+        <img src="{% static './img/Profile Pic.jpeg' %}" alt="logo">
+    </div>
+    <div class="about-desc-container center-column">
+        <h1>Full Stack Developer</h1>
+        <h2>Paul Afflick</h2>
+        <p>As a Full Stack Web Developer, I bring an extensive toolkit of modern technologies and methodologies to create robust, scalable web applications. My expertise spans both front-end and back-end development, with proficiency in crafting responsive user interfaces. On the front-end framework side, I build dynamic interactive user experiences. My back-end capabilities include Python-based frameworks like Flask and Django, as well as ASP.NET, allowing me to architect complete web solutions. I implement RESTful Web APIs to ensure seamless communication between front-end and back-end systems.
+        <br><br>
+        My strong foundation in algorithms and data structures enables me to write efficient, optimized code, while my experience with Agile Architecture and Software Project Management ensures structured, timely project delivery under my direction. I thrive on leading dynamic teams, solving complex technical challenges and continuously expanding my skills to stay current with evolving web technologies. 
+        </p>
+        <div class="skills-container center-column">
+            <h2>My Skills</h2>
+            <div class="skills-list center-row">
+                <label class="text-label">HTML</label>
+                <label class="text-label">React </label>
+                <label class="text-label">CSS</label>
+                <label class="text-label">Web API </label>
+                <label class="text-label">Python</label>
+                <label class="text-label">Django</label>
+                <label class="text-label">Flask </label>
+                <label class="text-label">JS/jQuery</label>
+                <label class="text-label">Agile</label>
+                <label class="text-label">ASP.NET</label>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock content %}

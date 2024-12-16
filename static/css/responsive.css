@@ -1,0 +1,42 @@
+
+/*Small Screens*/
+
+@media(max-width:640px){
+    html {
+        font-size: 12px;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    .nav-options {
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+        margin: 1rem 0px;
+    }
+
+    .about-section {
+        flex-direction: column;
+    }
+}
+
+/*Medium Screen*/
+
+@media(min-width:641px) and (max-width:1007px){
+    html {
+        font-size: 13px;
+    }
+
+    header{
+        flex-direction: column;
+    }
+
+    .logo {
+        width: 100%;
+        margin: 1rem 0px;
+    }
+}

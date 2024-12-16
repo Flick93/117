@@ -1,0 +1,56 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lobster+Two:ital,wght@0,400;0,700;1,400;1,700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="{% static './css/base.css' %}">
+    <link rel="stylesheet" href="{% static './css/header.css' %}">
+    <link rel="stylesheet" href="{% static './css/responsive.css' %}">
+    <link rel="stylesheet" href="{% static './css/sections.css' %}">
+    <link rel="stylesheet" href="{% static './css/project-section.css' %}">
+    
+    
+    <title>{% block title %}{% endblock title %}</title>
+</head>
+<body>
+    <header class="center-row">
+
+        <!-- left side -->
+
+         <div class="logo center-row">
+            <img src="{% static './img/logo.png' %}" alt="">
+         </div>
+
+        <!-- right side -->
+
+         <div class="nav-menu">
+            <nav>
+               <!-- hamburger button -->
+
+                <!-- menu optioons -->
+                <div class="nav-options center-row">
+                    <a href="{% url 'about_url' %}">About Me</a>
+                    <a href="{% url 'projects_list' %}">Projects</a>
+                    <a href="{% url 'experience_list' %}">Experience</a>
+                    <a href="{% url 'contact' %}">Contact</a>
+                </div>
+ 
+            </nav>
+            
+         </div>
+
+    </header>
+
+    {% block content %}
+    {% endblock content %}
+
+
+</body>
+</html>
